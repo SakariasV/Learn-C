@@ -9,8 +9,8 @@ int divide(int x,int y);
 
 int main()  {
 
-    int firstnumber;
-    int secondnumber;
+    float firstnumber;
+    float secondnumber;
     int getbacknumber;
     int option;
 
