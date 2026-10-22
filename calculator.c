@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 
-int z;
-int add(int x,int y);
-int subtract(int x,int y);
-int multiply(int x,int y);
-int divide(int x,int y);
+float z;
+float add(float x,float y);
+float subtract(float x,float y);
+float multiply(float x,float y);
+float divide(float x,float y);
 
 int main()  {
 
-    int firstnumber;
-    int secondnumber;
-    int getbacknumber;
+    float firstnumber;
+    float secondnumber;
+    float getbacknumber;
     int option;
 
     while (1)   {
     system("cls");
     printf("First number:\n");
-    scanf("%d", &firstnumber);
+    scanf("%f", &firstnumber);
     
     
     system("cls");
     printf("Second number:\n");
-    scanf("%d", &secondnumber);
+    scanf("%f", &secondnumber);
     
     
     system("cls");
@@ -32,19 +32,19 @@ int main()  {
     if (option == 1) {
         getbacknumber = add(firstnumber,secondnumber);
         system("cls");
-        printf("You get back %d\n",getbacknumber);
+        printf("You get back %f\n",getbacknumber);
     } else if (option == 2) {
         getbacknumber = subtract(firstnumber,secondnumber);
         system("cls");
-        printf("You get back %d\n",getbacknumber);
+        printf("You get back %f\n",getbacknumber);
     } else if (option == 3) {
         getbacknumber = multiply(firstnumber,secondnumber);
         system("cls");
-        printf("You get back %d\n",getbacknumber);
+        printf("You get back %f\n",getbacknumber);
     } else if (option == 4) {
         getbacknumber = divide(firstnumber,secondnumber);
         system("cls");
-        printf("You get back %d\n",getbacknumber);
+        printf("You get back %f\n",getbacknumber);
     } else {
         system("cls");
         printf("somthing went wrong");
@@ -53,19 +53,19 @@ int main()  {
     }
 }
 
-int add(int x,int y) {
+float add(float x,float y) {
     z = x + y;
     return z;
 }
-int subtract(int x,int y) {
+float subtract(float x,float y) {
     z = x - y;
     return z;
 }
-int multiply(int x,int y) {
+float multiply(float x,float y) {
     z = x * y;
     return z;
 }
-int divide(int x,int y) {
+float divide(float x,float y) {
     z = x / y;
     return z;
 }

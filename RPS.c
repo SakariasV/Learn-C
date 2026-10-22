@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include <ctype.h>
 
@@ -86,3 +87,9 @@ int main()  {
 
 
 }
+=======
+// rock paper scissors game
+
+#include <stdio.h>
+
+>>>>>>> c96c417ec17bd79fe4493dc7c424219790007f94
