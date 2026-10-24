@@ -7,6 +7,9 @@ int main() {
 
     int check_win(char* computerword, char* gused_letters);
 
+    // TODO
+    // add so the computer picks a random
+    // word from a list off words
 
     char computerword[30] = "test";
     char gused_letters[50];
@@ -38,6 +41,10 @@ int main() {
             break;
         } else  {
             print_word(computerword, gused_letters);
+            
+            // TODO
+            // add so you can see what words you have guessed
+            
             //sleep(1);
             //printf("\n");
             //for (i = 0; gused_letters[i]; i++) {
@@ -50,6 +57,8 @@ int main() {
             scanf("%c", &guess);
             system("cls");
             strncat(gused_letters,guess,3);
+            // TODO
+            // add so the guess count only goes upp if you guess wrong
             gusess_count++;
         }
     }
