@@ -13,6 +13,7 @@ int main()  {
     int pcpick;
     int realpick;
 
+
     system("cls");
     printf("1) Rock\n2) paper\n3) scissors\n");
     scanf("%d", &input);
